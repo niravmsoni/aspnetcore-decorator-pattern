@@ -60,7 +60,9 @@ Demonstrates Decorator pattern implementation in .NET Core
 	}
 	
 	
-	//Program
+	//Program.cs
+ 
 	services.AddScoped<WeatherService>();
-	//Doing so - Every-time the first call will land up in CachedWeatherService and then it will go to inner weather service
+
+ 	//Doing so - Every-time the first call will land up in CachedWeatherService and then it will go to inner weather service
 	services.AddScoped<IWeatherService, CachedWeatherService>();
