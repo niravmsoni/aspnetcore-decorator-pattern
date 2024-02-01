@@ -66,3 +66,6 @@ Demonstrates Decorator pattern implementation in .NET Core
 
  	//Doing so - Every-time the first call will land up in CachedWeatherService and then it will go to inner weather service
 	services.AddScoped<IWeatherService, CachedWeatherService>();
+
+ 	// Without DI
+  	var weather = new CachedWeatherService(new WeatherService(_httpClient), memoryCache)
