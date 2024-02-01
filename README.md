@@ -3,7 +3,6 @@ Demonstrates Decorator pattern implementation in .NET Core
 
 - Structural Design Pattern used for dynamically adding behavior to class without modifying it
 
-	//Model
 	public class Weather
 	{
 		public class Temperature{get;set;}
